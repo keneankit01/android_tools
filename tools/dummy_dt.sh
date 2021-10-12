@@ -2,7 +2,7 @@
 
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
-# Copyright (C) 2019 Shivam Kumar Jha <jha.shivam3@gmail.com>
+# Copyright (C) 2019 Shivam Kumar Jha <keneankit01@gmail.com>
 #
 # Helper functions
 
@@ -106,7 +106,7 @@ git_op () {
     git init . > /dev/null 2>&1
     git checkout -b $BRANCH > /dev/null 2>&1
     git add --all > /dev/null 2>&1
-    git -c "user.name=ShivamKumarJha" -c "user.email=jha.shivam3@gmail.com" commit -sm "$DESCRIPTION" > /dev/null 2>&1
+    git -c "user.name=keneankit01" -c "user.email=keneankit01@gmail.com" commit -sm "$DESCRIPTION" > /dev/null 2>&1
     git push https://"$GIT_TOKEN"@github.com/"$ORG"/"$DT_REPO".git --all > /dev/null 2>&1
     echo -e "Dumping blobs"
     rm -rf "$PROJECT_DIR"/vendor/"$BRAND"/"$DEVICE"/
